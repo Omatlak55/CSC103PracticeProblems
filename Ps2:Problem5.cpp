@@ -14,17 +14,15 @@
  
  int main()
  {
-        int n;
-        cin >> n;
-        int sum = 0;
-        for(int i = 0; i < n; i++)
-        {
-            int x;
-            cin >> x;
-            sum += x * (1 - 2 * (x % 2));
-        }
-        cout << sum << "\n";
-    
+    int n;
+    cin >> n;
+    int sum = 0;
+    for(int i = 0; i < n; i++){
+        int x;
+        cin >> x;
+        
+    }
+
      return 0;
  }
  

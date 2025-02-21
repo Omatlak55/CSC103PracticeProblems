@@ -6,18 +6,17 @@ using std::cout;
 
 int main()
 {
-	int n;
-	cin >> n;
 	int sum = 0;
-	for(int i = 0; i < n; i++)
+	while(true)
 	{
 		int x;
 		cin >> x;
+		if (cin.good() == false)
+			break;
+		else
 		sum += x;
 	}
-
-	cout << sum << "\n";
-	return 0;
+	cout << "The sum is:" << sum << "\n";
 }
 
 // vim:foldlevel=2

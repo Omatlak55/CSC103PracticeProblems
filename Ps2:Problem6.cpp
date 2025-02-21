@@ -25,4 +25,9 @@ int main()
 	return 0;
 }
 
+// When run output is:
+// 1
+// 1
+// 2.5
+
 // vim:foldlevel=2

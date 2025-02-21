@@ -7,19 +7,40 @@
 using std::cin;
 using std::cout;
 
+//Arbitrarily many integers
 int main()
 {
     int n;
+    cout << "How many integers do you want to average? ";
     cin >> n;
-    int sum = 0;
+    //n is the number of integers to be read
+    double sum = 0;
     for(int i = 0; i < n; i++)
     {
-        int x;
+        double x;
         cin >> x;
         sum += x;
     }
+    
 
-    cout << static_cast<double>(sum) / n << "\n";
+    double avg = sum / n;
+
+    cout << avg << "\n";
     
     return 0;
 }
+
+/*3 integers
+int main()
+{
+    int a, b, c;
+    double sum = 0;
+    cout << "Enter 3 integers: ";
+    cin >> a >> b >> c;
+    sum = a + b + c;
+    double avg = sum / 3.0;
+    cout << avg << "\n";
+    
+    return 0;
+}
+*/

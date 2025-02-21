@@ -12,12 +12,12 @@ int main()
 	 * are stored in something like scientific notation -- there is a
 	 * fixed amount of space to write the exponent, and there is also
 	 * a fixed amount of space for the coefficient... */
-
-	 double d = 1.0;
-	 double e = 1.0;
-	 double f = 1.0e-10;
-	 cout << (d + f == e + f) << "\n";
-	 
-
+	double d = 1.0;
+	double e = 1.000000000000001;
+	double f = 1.000000000000002;
+	double sum1 = d + f;
+	double sum2 = e + f;
+	cout << "d + f = " << sum1 << "\n";
+	cout << "e + f = " << sum2 << "\n";
 	return 0;
 }
