@@ -16,6 +16,12 @@ int main()
 	 * 3. What type of result do you get when adding or multiplying
 	 *    floating point values with integers? */
 
+	int i = 1.5;
+	cout << i << "\n";
+	double d = 1;
+	cout << d << "\n";
+	double e = 1.5;
+	cout << d + e << "\n";
 	return 0;
 }
 

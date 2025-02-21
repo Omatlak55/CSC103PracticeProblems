@@ -13,5 +13,11 @@ int main()
 	 * fixed amount of space to write the exponent, and there is also
 	 * a fixed amount of space for the coefficient... */
 
+	 double d = 1.0;
+	 double e = 1.0;
+	 double f = 1.0e-10;
+	 cout << (d + f == e + f) << "\n";
+	 
+
 	return 0;
 }

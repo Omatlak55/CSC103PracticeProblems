@@ -23,7 +23,7 @@ int main()
     {
         cout << i << " :: " << static_cast<char>(i) << "\n";
     /*
-    To omly print one ASCII value use the following code:
+    To only print one ASCII value use the following code:
     int i;
     cin >> i;
     cout << i << " :: " << static_cast<char>(i) << "\n";

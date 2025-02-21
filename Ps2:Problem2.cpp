@@ -9,15 +9,17 @@ using std::cout;
 
 int main()
 {
-	double num;
-    double sum=0;
-    double count=0;
-    while(cin >> num)
+    int n;
+    cin >> n;
+    int sum = 0;
+    for(int i = 0; i < n; i++)
     {
-        sum += num;
-        count++;
+        int x;
+        cin >> x;
+        sum += x;
     }
-    cout << "The average is: " << sum/count << "\n";
 
-	return 0;
+    cout << static_cast<double>(sum) / n << "\n";
+    
+    return 0;
 }

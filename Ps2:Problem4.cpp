@@ -11,7 +11,16 @@
  
  int main()
  {
-     /* your answer goes here... */
+    int n;
+    cin >> n;
+    int count = 0;
+    while(n % 2 == 0)
+    {
+        n /= 2;
+        count++;
+
+    }
+    cout << count << "\n";
      return 0;
  }
  
