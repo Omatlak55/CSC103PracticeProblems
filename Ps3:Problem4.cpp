@@ -6,12 +6,20 @@
  * Bonus question: compute the sum of the first n *odd* squares.  That is,
  * 1^2 + 3^2 + 5^2 + ... + (2n-1)^2
  * */
+
 #include <iostream>
 using std::cin;
 using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
+	int n;
+	cin >> n;
+	int sum = 0;
+	for (int i = 1; i <= n; i++)
+	{
+		sum += i * i;
+	}
+	cout << sum << "\n";
 	return 0;
 }

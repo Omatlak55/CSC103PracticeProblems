@@ -12,36 +12,82 @@
 
 /* 1. */
 
-if (b) {
-	X;
+// if (b) {
+// 	X;
+// }
+
+while (b) {
+    X;
 }
+
+
 
 /* 2. */
 
-for (X; b; Y) {
-	Z;
+// for (X; b; Y) {
+// 	Z;
+// }
+
+X;
+while (b) {
+    Z;
+    Y;
 }
+
 
 /* 3. */
 
-do {
-	X;
-} while (b);
+// do {
+// 	X;
+// } while (b);
+
+while (true) {
+    X;
+    if (!b) {
+        break;
+    }
+}
 
 /* 4. */
 
-if (b) {
-	X;
-} else {
-	Y;
+// if (b) {
+// 	X;
+// } else {
+// 	Y;
+// }
+
+bool executed4 = false;
+while (!executed4) {
+    if (b) {
+        X;
+    } else {
+        Y;
+    }
+    executed4 = true;
 }
+
+
 
 /* 5. */
 
-if (b1) {
-	X;
-} else if (b2) {
-	Y;
-} else if (b3) {
-	Z;
+// if (b1) {
+// 	X;
+// } else if (b2) {
+// 	Y;
+// } else if (b3) {
+// 	Z;
+// }
+
+bool executed5 = false;
+while (!executed5) {
+    if (b1) {
+        X;
+        executed5 = true;
+    } else if (b2) {
+        Y;
+        executed5 = true;
+    } else if (b3) {
+        Z;
+        executed5 = true;
+    }
 }

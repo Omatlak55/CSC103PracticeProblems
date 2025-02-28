@@ -5,12 +5,36 @@
  * you print the least significant digit first).  Or if b=2 and n=7,
  * then you would print "111" since 7 = 1*4 + 1*2 + 1. */
 
- #include <iostream>
- using std::cin;
- using std::cout;
- 
- int main()
- {
-     /* your answer goes here... */
-     return 0;
- }
+#include <iostream>
+using std::cin;
+using std::cout;
+
+int main()
+{
+    int b, n;
+    cout << "Enter base (b < 10): ";
+    cin >> b;
+    cout << "Enter number to convert: ";
+    cin >> n;
+
+    int digits[32];
+    int i = 0;
+    while (n > 0)
+    {
+        digits[i] = n % b;
+        n /= b;
+        i++;
+    }
+
+    if (i == 0) {
+        cout << "0";
+    } 
+    else {
+        for (int j = i - 1; j >= 0; j--)
+        {
+            cout << digits[j];
+        }
+    }
+    cout << "\n";
+    return 0;
+}

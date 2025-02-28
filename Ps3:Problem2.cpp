@@ -9,6 +9,22 @@ using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
+	int small = INT_MAX;
+	int small2nd = INT_MAX;
+	int x;
+	while (cin >> x)
+	{
+		if (x < small)
+		{
+			small2nd = small;
+			small = x;
+		}
+		else if (x < small2nd && x != small)
+		{
+			small2nd = x;
+		}
+	}
+	cout << small2nd << "\n";
+	
 	return 0;
 }
