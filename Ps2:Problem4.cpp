@@ -14,12 +14,20 @@
     int n;
     cin >> n;
     int count = 0;
-    while(n % 2 == 0)
+    while (true)
     {
-        n /= 2;
-        count++;
-
+        if(n % 2 == 0)
+        {
+            n = n / 2;
+            count++;
+        }
+        else if (n % 2 != 0)
+        {
+            break;
+        }
+       
     }
+   
     cout << count << "\n";
      return 0;
  }

@@ -22,12 +22,6 @@ int main()
 	for(int i =32; i <=126; i++)
     {
         cout << i << " :: " << static_cast<char>(i) << "\n";
-    /*
-    To only print one ASCII value use the following code:
-    int i;
-    cin >> i;
-    cout << i << " :: " << static_cast<char>(i) << "\n";
-    */
     }
 	return 0;
 }

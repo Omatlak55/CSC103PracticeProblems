@@ -14,17 +14,51 @@
  
  int main()
  {
-    int n;
-    cin >> n;
-    int sum = 0;
-    for(int i = 0; i < n; i++){
-        int x;
-        cin >> x;
-        
+    cout << "How many numbers do you want to enter? ";
+    int count;
+    cin >> count;
+    int evensum = 0;
+    int oddsum = 0;
+    int x;
+    for(int i = 0; i < count; i++)
+    {
+         cin >> x;
+        if(x % 2 == 0)
+        {
+            evensum += x;
+        }
+        else 
+        {
+            oddsum += x;
+        }
     }
-
-     return 0;
+    int finalvalue = evensum - oddsum;
+    cout << "Final Value: " << finalvalue << "\n";
+    cout << "Evensum: " << evensum << "\n";
+    cout << "Oddsum: " << oddsum << "\n";
+    return 0;
  }
  
  // vim:foldlevel=2
  
+ /*
+ while(true)
+ {
+    cin >> x;
+    if (cin.good() == false)
+    {
+        break;
+    }
+    else
+    {
+        if (x % 2 == 0)
+        {
+            evensum += x;
+        }
+        else
+        {
+            oddsum += x;
+        }
+    }
+}
+ */

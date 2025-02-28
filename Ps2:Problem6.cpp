@@ -26,8 +26,8 @@ int main()
 }
 
 // When run output is:
-// 1
-// 1
-// 2.5
+// 1 (because a floating point value is being assigned to an integer variable it is rounded down to the nearest integer)
+// 1 (because an integer is being assigned to a floating point variable it is converted to a floating point value)
+// 2.5 (because a floating point value is being added to an integer value the integer value is converted to a floating point value and then added together)
 
 // vim:foldlevel=2
