@@ -28,6 +28,8 @@ while (b) {
 // 	Z;
 // }
 
+//for(int i; i < 1; i++)
+
 X;
 while (b) {
     Z;
@@ -56,17 +58,15 @@ while (true) {
 // 	Y;
 // }
 
-bool executed4 = false;
-while (!executed4) {
-    if (b) {
-        X;
-    } else {
-        Y;
-    }
-    executed4 = true;
+
+while(true) {
+    while (b) {
+    X;
 }
-
-
+    while (!b) {
+    Y;
+}
+}   
 
 /* 5. */
 
@@ -78,16 +78,22 @@ while (!executed4) {
 // 	Z;
 // }
 
-bool executed5 = false;
-while (!executed5) {
-    if (b1) {
-        X;
-        executed5 = true;
-    } else if (b2) {
+while(true) {
+    while (b1) {
+    X;
+}
+    while(!b1) {
+
+        while (b2) {
         Y;
-        executed5 = true;
-    } else if (b3) {
-        Z;
-        executed5 = true;
+        }
+
+        while(!b2) {
+            while (b3) {
+            Z;
+            }
+        }
     }
 }
+
+//couldn't figure out the correct way to do this one.

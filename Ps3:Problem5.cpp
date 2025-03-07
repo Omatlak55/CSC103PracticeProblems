@@ -6,8 +6,10 @@
  * then you would print "111" since 7 = 1*4 + 1*2 + 1. */
 
 #include <iostream>
+#include <vector>
 using std::cin;
 using std::cout;
+using std::vector;
 
 int main()
 {
@@ -17,23 +19,21 @@ int main()
     cout << "Enter number to convert: ";
     cin >> n;
 
-    int digits[32];
-    int i = 0;
-    while (n > 0)
-    {
-        digits[i] = n % b;
-        n /= b;
-        i++;
+    if (n == 0) {
+        cout << "0\n";
+        return 0;
     }
 
-    if (i == 0) {
-        cout << "0";
-    } 
-    else {
-        for (int j = i - 1; j >= 0; j--)
-        {
-            cout << digits[j];
-        }
+    vector<int> digits;
+    while (n > 0)
+    {
+        digits.push_back(n % b);
+        n /= b;
+    }
+
+    for(int i = digits.size() - 1; i >= 0; i--)
+    {
+        cout << digits[i];
     }
     cout << "\n";
     return 0;
